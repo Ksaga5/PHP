@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteBase /
+#5
+#RewriteRule ^dir1/ index1.php?get=$1
+#RewriteRule ^dir2/ index2.php?get=$2
+#7
+#RewriteRule .+\.php index.php
+#9
+#RewriteRule (.+)\.html$ $1.php
+#11
+#RedirectMatch ^/index(.+).php /$1.php
+#13
+#15
+#17
+
+
+
