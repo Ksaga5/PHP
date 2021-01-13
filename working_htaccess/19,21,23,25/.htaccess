@@ -10,3 +10,22 @@ RewriteBase /
 #RewriteCond %{REQUEST_URI} ^/content/
 #RewriteRule .+ index.php
 #25
+#RewriteCond %{REQUEST_URI} \.css$ [OR]
+#RewriteCond %{REQUEST_URI} ^/style/
+#RewriteRule .+ index.php
+#27
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule .+ index.php
+#29
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule .+ index.php
+#31
+#RewriteCond %{REQUEST_FILENAME} !-f 
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule .+ index.php
+#33
+#RewriteCond %{REQUEST_URI} !^/index\.php$
+#RewriteRule (.+) index.php?get=$1
+#35
+RewriteRule ^test\.php$ index.php [NC]
+#37
